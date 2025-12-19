@@ -3,13 +3,47 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<title>DavanteDent</title>
 	</head>
 	<body>
-		<header></header>
+		<header>
+			<!-- icon -->
+			<h1>Gestión de citas</h1>
+		</header>
 
 		<main>
-			<script src="app.js"></script>
+			<section id="formulario">
+				<form id="form-cita">
+					<label for="cita-fecha">Fecha de la cita</label>
+					<input type="date" id="cita-fecha" />
+
+					<label for="cita-hora">Hora de la cita</label>
+					<input type="time" id="cita-hora" />
+
+					<label for="paciente-nombre">Nombre del paciente</label>
+					<input type="text" id="paciente-nombre" />
+
+					<label for="paciente-apellidos">Apellidos del paciente</label>
+					<input type="text" id="paciente-apellidos" />
+
+					<label for="paciente-dni">DNI del paciente</label>
+					<input type="text" id="paciente-dni" />
+
+					<label for="paciente-telefono">Telefono del paciente</label>
+					<input type="text" id="paciente-telefono" />
+
+					<label for="paciente-fecha-nac"
+						>Fecha de nacimiento del paciente</label
+					>
+					<input type="date" id="paciente-fecha-nac" />
+
+					<label for="paciente-observaciones">Observaciones del paciente</label>
+					<input type="textarea" id="paciente-observaciones" />
+				</form>
+				<button type="submit">Guardar cita</button>
+			</section>
+			<section id="tabla"></section>
 		</main>
 
 		<footer></footer>
