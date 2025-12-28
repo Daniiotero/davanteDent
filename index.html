@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="app.js"></script>
 		<title>DavanteDent</title>
 	</head>
 	<body>
@@ -40,14 +41,15 @@
 
 					<label for="paciente-observaciones">Observaciones del paciente</label>
 					<input type="textarea" id="paciente-observaciones" />
+
+					<button type="submit">Guardar cita</button>
 				</form>
-				<button type="submit">Guardar cita</button>
 			</section>
 			<section id="tabla">
 				<table id="tabla-citas">
 					<thead>
 						<tr>
-							<th>id</th>
+							<th>Índice</th>
 							<th>Fecha</th>
 							<th>Hora</th>
 							<th>Nombre Pac</th>
